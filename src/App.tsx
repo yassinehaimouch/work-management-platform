@@ -1,3 +1,4 @@
+import { Column } from "./Column";
 import {
   AppContainer,
   CardContainer,
@@ -8,11 +9,7 @@ import {
 export const App = () => {
   return (
     <AppContainer>
-      <ColumContainer>
-        <ColumnTitle>Todo :</ColumnTitle>
-        <CardContainer>First Item</CardContainer>
-        <CardContainer>Second Item</CardContainer>
-      </ColumContainer>
+      <Column text="Todo:" />
     </AppContainer>
   );
 };
